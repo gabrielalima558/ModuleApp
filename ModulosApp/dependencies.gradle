@@ -1,0 +1,63 @@
+ext {
+
+    kotlinVersion = '1.3.41'
+    ktxVersion = '1.0.2'
+
+    buildTools = '3.4.2'
+
+    //Rx
+    rxJavaVersion = '2.2.7'
+    rxKotlinVersion = '2.2.0'
+    rxAndroidVersion = '2.1.1'
+
+    //Koin
+    koinVersion = '2.0.0-rc-1'
+
+    //Retrofit
+    retrofitVersion = '2.6.0'
+    //Gson
+    gsonVersion = '2.8.5'
+
+    //Room version
+    roomVersion = '2.1.0-alpha02'
+
+    //Layout
+    appCompactVersion = '1.0.2'
+    constrainVersion = '1.1.3'
+    cardViewVersion = '1.0.0'
+    recyclerViewVersion = '1.0.0'
+
+    AndroidArchVersion = '1.1.1'
+    databindingVersion = '3.1.4'
+    lifeCycleVersion = '2.0.0'
+
+    dependencies = [
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            ktx                   : "androidx.core:core-ktx:$ktxVersion",
+
+
+            appCompact            : "androidx.appcompat:appcompat:$appCompactVersion",
+            constraintlayout      : "androidx.constraintlayout:constraintlayout:$constrainVersion",
+            cardView              : "androidx.cardview:cardview:$cardViewVersion",
+            recyclerView          : "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+
+            viewModel             : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion",
+            lifeCycle             : "android.arch.lifecycle:extensions:$AndroidArchVersion",
+
+            dataBinding           : "com.android.databinding:compiler:$databindingVersion",
+
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxKotlin              : "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            koin                  : "org.koin:koin-android:$koinVersion",
+            koinViewModel         : "org.koin:koin-androidx-viewmodel:$koinVersion",
+            gson                  : "com.google.code.gson:gson:$gsonVersion",
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitRxAdapter     : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            room                  : "androidx.room:room-runtime:$roomVersion",
+            roomRxJava            : "androidx.room:room-rxjava2:$roomVersion",
+            roomCompiler          : "androidx.room:room-compiler:$roomVersion"
+
+    ]
+}
