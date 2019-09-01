@@ -44,7 +44,7 @@ class AndroidJobsListActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        setSupportActionBar(binding.toolbar);
+        setSupportActionBar(binding.toolbar)
         binding.toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_material)
         binding.toolbar.setNavigationOnClickListener{
             finish()

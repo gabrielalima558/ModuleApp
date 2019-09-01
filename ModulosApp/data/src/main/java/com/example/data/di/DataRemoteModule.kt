@@ -2,6 +2,8 @@ package com.example.data.di
 
 import com.example.data.R
 import com.example.data.remote.api.ServerApi
+import com.example.data.remote.source.RemoteDataSource
+import com.example.data.remote.source.RemoteDataSourceImpl
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
@@ -16,6 +18,9 @@ val remoteDataSourceModule = module {
         okHttpClient = get(),
         url =  androidContext().getString(R.string.base_url)
     ) }
+
+    factory<RemoteDataSource> { RemoteDataSourceImpl(serverApi = get()) }
+
 }
 
 fun providesOkHttpClient(): OkHttpClient {
